@@ -1,0 +1,16 @@
+<form [formGroup]="patientForm" >
+    <input type="hidden" formControlName="id" />
+    <label>Nom<input type="text" formControlName="nom"  /></label>
+    <label>Prenom<input type="text" formControlName="prenom"  /></label>
+    <label>NumeroSecuriteSociale<input type="text" formControlName="numeroSecuriteSociale"  /></label>
+    <label>Date de Naissance<input type="date" formControlName="dateDeNaissance"  /></label>
+    <label>Sexe<input type="text" formControlName="sexe" /></label>
+     <div formGroupName="adresse">
+        <p>Adresse</p>
+   <label>Numero<input type="text" formControlName="numero" /></label>
+    <label>Rue<input type="text" formControlName="rue" /></label>
+    <label>Cp<input type="text" formControlName="cp" /></label>
+    <label>Ville<input type="text" formControlName="ville" /></label>
+    </div> 
+    <button (click)="submit()">Valider</button>
+</form>

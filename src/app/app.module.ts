@@ -10,6 +10,7 @@ import { InfirmiereListeComponent } from './infirmiere-liste/infirmiere-liste.co
 import { PatientComponent } from './patient-liste/patient/patient.component';
 import { PatientDetailsComponent } from './patient-liste/patient-details/patient-details.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { AddPatientComponent } from './patient-liste/add-patient/add-patient.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     NavbarComponent,
     InfirmiereListeComponent,
     PatientComponent,
-    PatientDetailsComponent
+    PatientDetailsComponent,
+    AddPatientComponent
   ],
   imports: [
     BrowserModule,
