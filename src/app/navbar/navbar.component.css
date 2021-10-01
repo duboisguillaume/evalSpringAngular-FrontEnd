@@ -1,0 +1,29 @@
+.nav-container {
+    display: flex;
+    width: 100%;
+    background-color: lightseagreen;
+    height: 10vh;
+    font-size: x-large;
+    justify-content: space-between;
+    align-items: center;
+    
+}   
+ul {
+        flex-direction: row;
+        display: flex;
+        height: inherit;
+        list-style-type: none;
+        text-decoration: none;
+        align-items: center;
+    }
+li {
+        margin-left: 1em;
+        position: relative;
+        align-items: center;
+        height: 30px;
+       
+    }
+a {
+        text-decoration: none;
+        color: black;
+    }

@@ -1,0 +1,22 @@
+<button (click)="delete()">Supprimer</button>
+<form [formGroup]="patientForm" *ngIf="patient!=null">
+    <input type="hidden" formControlName="id" [(ngModel)]="patient.id" />
+    <label>Nom<input type="text" formControlName="nom" [(ngModel)]="patient.nom" /></label>
+    <label>Prenom<input type="text" formControlName="prenom" [(ngModel)]="patient.prenom" /></label>
+    <label>NumeroSecuriteSociale<input type="text" formControlName="numeroSecuriteSociale" [(ngModel)]="patient.numeroSecuriteSociale" /></label>
+    <label>Date de Naissance<input type="date" formControlName="dateDeNaissance" [(ngModel)]="patient.dateDeNaissance" /></label>
+    <label>Sexe<input type="text" formControlName="sexe" [(ngModel)]="patient.sexe" /></label>
+     <div formGroupName="adresse">
+        <p>Adresse</p>
+   <label>Numero<input type="text" formControlName="numero" [(ngModel)]="patient.adresse.numero"/></label>
+    <label>Rue<input type="text" formControlName="rue" [(ngModel)]="patient.adresse.rue"/></label>
+    <label>Cp<input type="text" formControlName="cp" [(ngModel)]="patient.adresse.cp"/></label>
+    <label>Ville<input type="text" formControlName="ville" [(ngModel)]="patient.adresse.ville"/></label>
+    </div> 
+    <div formGroupName="infirmiere">
+        <p>Infirmiere</p>
+        <input type="hidden" formControlName="id" [(ngModel)]="patient.infirmiere.id"/>
+    <label>Nom<input type="text" formControlName="nom" [(ngModel)]="patient.infirmiere.nom"/></label>
+    </div>
+    <button (click)="submit()">Valider</button>
+</form>
